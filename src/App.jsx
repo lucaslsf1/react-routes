@@ -1,12 +1,30 @@
-console.log(window.location)
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Inicio from './paginas/Inicio/index'
+import SobreMim from './paginas/SobreMim/index'
 
 function App() {
 
   return (
-    <>
-      <h1>Olá, mundo</h1>
-    </>
+    <BrowserRouter> 
+      <Routes>
+        <Route 
+          path="/"
+          element={<Inicio />}
+        />
+
+        <Route 
+          path="/sobremim"
+          element={<SobreMim />}
+        />
+
+        <Route 
+          path="*"
+          element={<div>Error 404. Página não encontrada.</div>}
+        />
+      </Routes>
+    </BrowserRouter>
   )
+
 }
 
-export default App
+export default App;
