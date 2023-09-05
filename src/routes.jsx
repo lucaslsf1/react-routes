@@ -1,11 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Inicio from './paginas/Inicio/index'
 import SobreMim from './paginas/SobreMim/index'
+import Menu from "./components/Menu";
 
-function App() {
+function AppRoutes() {
 
   return (
     <BrowserRouter> 
+
+      <Menu />
+
       <Routes>
         <Route 
           path="/"
@@ -27,4 +31,4 @@ function App() {
 
 }
 
-export default App;
+export default AppRoutes;
