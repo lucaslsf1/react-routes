@@ -13,7 +13,6 @@ export default function Menu() {
                 <MenuLink to={'/sobremim'}>
                     Sobre mim
                 </MenuLink>
-
             </nav>
         </header>
     )

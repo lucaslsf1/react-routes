@@ -1,6 +1,6 @@
 import styles from './Inicio.module.css';
 import posts from '../../json/posts.json'
-import Post from "../../components/Post";
+import PostCard from "../../components/PostCard";
 
 
 export default function Inicio() {
@@ -9,7 +9,7 @@ export default function Inicio() {
         {posts.map((post) =>{
             return(
                 <li key={post.id}>
-                    <Post post={post} />
+                    <PostCard posts={post} />
                 </li>
             )
         })}
